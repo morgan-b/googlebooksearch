@@ -8,7 +8,7 @@ const booksSchema = new Schema({
     trim: true,
   },
   authors: {
-    type: String,
+    type: Array,
     trim: true,
   },
   description: {
@@ -25,6 +25,6 @@ const booksSchema = new Schema({
   },
 });
 
-const Books = mongoose.model("books", booksSchema);
+const Books = mongoose.model("Books", booksSchema);
 
 module.exports = Books;
